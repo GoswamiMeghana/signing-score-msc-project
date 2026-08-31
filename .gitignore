@@ -1,0 +1,48 @@
+# --- Secrets: NEVER commit credentials ---
+.env
+.env.*
+!.env.example
+pipelines/.env
+pipelines/.env.*
+!pipelines/.env.example
+credentials.csv
+
+# --- Sensitive club data (NDA — never commit; belongs in the bucket) ---
+*injuries*.csv
+*_with_mapping*.csv
+gb1_*.csv
+
+# --- Admin-only ingestion layer (write access) — never pushed to the student repo ---
+pipelines/
+
+# --- Local data caches ---
+data/
+*.parquet
+*.jsonl
+
+# --- Python ---
+.venv/
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# --- OS ---
+.DS_Store
+**/.DS_Store
+
+# --- Editor / agent config (not part of the student deliverable) ---
+.claude/
+
+# --- Project briefs (kept private until finalised) ---
+projects/
+
+# --- Additional secrets (added) ---
+self_env
+self_env.*
+.streamlit/secrets.toml
+.streamlit/
+
+# --- Possible data exports, check before un-ignoring ---
+*.xlsx
+files.zip
