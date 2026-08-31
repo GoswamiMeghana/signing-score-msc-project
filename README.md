@@ -16,8 +16,3 @@ Data files are not included in this repository. StatsBomb event data, injuries d
 and SecondSpectrum tracking data are used under this project's data access agreements
 and are not publicly redistributable.
 
-## Declaration of AI Use
-
-Claude (Anthropic) was used throughout for code development, debugging, and drafting
-assistance. All analytical decisions, methodology, and interpretation are the author's
-own.
